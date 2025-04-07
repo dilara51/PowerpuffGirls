@@ -16,7 +16,7 @@
 
 ## 2. Ziel des Reviews
 
-Ziel des Reviews war es, die Qualität der bestehenden Spezifikation, der Backend-Implementierung und der Unit-Tests zu analysieren. Besonderes Augenmerk lag auf der strukturellen Umsetzung, der Dokumentation sowie dem Einsatz statischer Codeanalyse-Tools.
+Ziel des Reviews war es, die Qualität der bestehenden Spezifikation, der Backend-Implementierung und der Unit-Tests zu analysieren. Besonderes Augenmerk lag auf der strukturellen Umsetzung, der Dokumentation und der Einhaltung von Best Practices.
 
 ---
 
@@ -68,5 +68,4 @@ Ziel des Reviews war es, die Qualität der bestehenden Spezifikation, der Backen
 
 ## 6. Fazit
 
-Das technische Review war strukturiert, zielgerichtet und produktiv. Alle Beteiligten konnten ihre Rollen aktiv einbringen. Der Mix aus Review durch Menschen und objektiven Tools (Jest & Prettier) erwies sich als wirkungsvoll. Das Review führte zu konkreten Verbesserungsvorschlägen, die nun schrittweise umgesetzt werden sollen.
-
+Das technische Review war strukturiert, zielgerichtet und produktiv. Alle Beteiligten konnten ihre Rollen aktiv einbringen. Der Mix aus Review durch Menschen und objektiven Tools (Jest & Prettier) erwies sich als effektiv.
