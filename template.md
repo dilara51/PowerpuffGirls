@@ -60,8 +60,7 @@ Ziel des Reviews war es, die Qualität der bestehenden Spezifikation, der Backen
 
 - Ergänzung von Randfällen in den Anforderungen
 - Grafische Use-Case-Darstellung integrieren
-- Kommentare in komplexeren Codestellen ergänzen
-- Coverage-Bericht als Teil der CI oder im README sichtbar machen
+- System-Context-Diagramm
 - `.prettierrc` zur Vereinheitlichung der Formatierungsregeln einführen
 
 ---
