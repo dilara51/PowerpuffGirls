@@ -1,4 +1,4 @@
-const { createTask } = require('../controllers/taskController');
+const { createTask } = require("../controllers/taskController");
 
 describe("createTask", () => {
   const mockRes = () => {
@@ -14,13 +14,15 @@ describe("createTask", () => {
       body: {
         title: "Testaufgabe",
         dueDate: new Date(Date.now() + 86400000).toISOString(), // morgen
-        assignee: "user1"
-      }
+        assignee: "user1",
+      },
     };
     const res = mockRes();
     createTask(req, res);
     expect(res.status).toHaveBeenCalledWith(201);
-    expect(res.json).toHaveBeenCalledWith(expect.objectContaining({ title: "Testaufgabe" }));
+    expect(res.json).toHaveBeenCalledWith(
+      expect.objectContaining({ title: "Testaufgabe" })
+    );
   });
 
   test("Titel fehlt", () => {
