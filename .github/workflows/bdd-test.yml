@@ -1,0 +1,26 @@
+name: BDD Tests
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  run-bdd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v3
+
+      - name: Node.js installieren
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Abhängigkeiten installieren
+        run: npm install
+
+      - name: BDD Tests ausführen
+        run: npm run bdd
