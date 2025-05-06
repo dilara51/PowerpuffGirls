@@ -2,14 +2,16 @@ name: BDD Tests
 
 on:
   push:
-    branches: [ main, dev, develop ]
+    branches: [main, dev, develop]
   pull_request:
-    branches: [ main, dev, develop ]
-
+    branches: [main, dev, develop]
 
 jobs:
   run-bdd:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./server
 
     steps:
       - name: Repository auschecken
