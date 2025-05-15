@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
+const tasksRouter = require('./tasks');
 
-app.get("/api", (req, res) => {
-  res.json({ "users": ["user1", "user2", "user3"] })
-})
+app.use(express.json());
+app.use('/tasks', tasksRouter);
 
-app.listen(5000, () => { console.log("Server started on port 5000") })
+
+if (require.main === module) {
+  app.listen(5000, () => {
+    console.log('Server started on port 5000');
+  });
+}
+
+module.exports = app; 
