@@ -1,4 +1,4 @@
-name: Cypress UI Tests
+name:  Cypress UI Tests
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
     branches: [ develop, main ]
 
 jobs:
-  cypress-run:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
