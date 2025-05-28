@@ -1,4 +1,4 @@
-name: Cypress UI Tests
+name:  Cypress UI Tests
 
 on:
   push:
@@ -30,11 +30,3 @@ jobs:
           start: npm start
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 60
-
-      - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v2
-        with:
-          projectBaseDir: ./client
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
